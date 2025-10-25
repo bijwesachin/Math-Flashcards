@@ -1,0 +1,402 @@
+[
+  {
+    "topic": "Numbers & Place Value",
+    "subtopic": "Multi-digit numbers",
+    "front": "Multi-digit numbers",
+    "back": "Rule: Review the concept and apply the rule.\nSample Problem: 2 + 3 × 4\nSolution: 2 + 12 = 14",
+    "imageBack": "assets/images/place_values.jpg",
+    "icon": "🔢",
+    "color": "#e0f2fe",
+    "question": "Multi-digit numbers"
+  },
+  {
+    "topic": "Numbers & Place Value",
+    "subtopic": "Comparing Numbers",
+    "front": "Comparing Numbers",
+    "back": "Rule: Use >, <, = signs. Trick: Align digits from left and \nSample Problem: 45,678 > 45,599 because 6 > 5 in the hundreds place\nSolution: 45,678 > 45,599 because 6 > 5 in the hundreds place",
+    "imageBack": "assets/images/number_line_skip_counting.jpg",
+    "icon": "🔢",
+    "color": "#e0f2fe",
+    "question": "Comparing Numbers"
+  },
+  {
+    "topic": "Numbers & Place Value",
+    "subtopic": "Rounding",
+    "front": "Rounding",
+    "back": "Rule: Review the concept and apply the rule.\nSample Problem: 2 + 3 × 4\nSolution: 2 + 12 = 14",
+    "imageBack": "assets/images/number_line_skip_counting.jpg",
+    "icon": "🔢",
+    "color": "#e0f2fe",
+    "question": "Rounding"
+  },
+  {
+    "topic": "Operations",
+    "subtopic": "Multi-digit addition",
+    "front": "Multi-digit addition",
+    "back": "Rule: Add by place value. Line up digits. Carry to next place if 10 or more\nSample Problem: 456 + 378\nSolution: 834",
+    "imageBack": "assets/images/fraction_circles_blank.png",
+    "icon": "±×÷",
+    "color": "#fde68a",
+    "question": "Multi-digit addition"
+  },
+  {
+    "topic": "Operations",
+    "subtopic": "Multi-digit subtraction",
+    "front": "Multi-digit subtraction",
+    "back": "Rule: Subtract by place value. Borrow from the next place when needed\nSample Problem: 902 − 467\nSolution: 435",
+    "imageBack": "assets/images/fraction_circles_blank.png",
+    "icon": "±×÷",
+    "color": "#fde68a",
+    "question": "Multi-digit subtraction"
+  },
+  {
+    "topic": "Operations",
+    "subtopic": "Multiplication",
+    "front": "Multiplication",
+    "back": "Rule: Repeated addition or arrays. 3 × 4 = 3 groups of 4\nSample Problem: 23 × 4\nSolution: (20 × 4) + (3 × 4) = 92",
+    "imageBack": "assets/images/number_line_skip_counting.jpg",
+    "icon": "±×÷",
+    "color": "#fde68a",
+    "question": "Multiplication"
+  },
+  {
+    "topic": "Operations",
+    "subtopic": "Division",
+    "front": "Division",
+    "back": "Rule: Sharing equally or repeated subtraction. 20 ÷ 5 = 4\nSample Problem: 84 ÷ 7\nSolution: 12",
+    "imageBack": "assets/images/long_division.svg",
+    "icon": "±×÷",
+    "color": "#fde68a",
+    "question": "Division"
+  },
+  {
+    "topic": "Operations",
+    "subtopic": "Long division",
+    "front": "Long division",
+    "back": "Rule: Divide → Multiply → Subtract → Bring down (repeat)\nSample Problem: 392 ÷ 7\nSolution: 56",
+    "imageBack": "assets/images/long_division.svg",
+    "icon": "±×÷",
+    "color": "#fde68a",
+    "question": "Long division"
+  },
+  {
+    "topic": "Operations",
+    "subtopic": "Estimation",
+    "front": "Estimation",
+    "back": "Rule: Round numbers to make mental math easier\nSample Problem: 198 + 403 ≈ 200 + 400\nSolution: 600",
+    "imageBack": "assets/images/number_line_skip_counting.jpg",
+    "icon": "±×÷",
+    "color": "#fde68a",
+    "question": "Estimation"
+  },
+  {
+    "topic": "Fractions",
+    "subtopic": "Equivalent Fractions",
+    "front": "Equivalent Fractions",
+    "back": "Rule: Fractions that name the same amount. Multiply/divide top and bottom by same number\nSample Problem: 1/2\nSolution: 2/4 = 3/6",
+    "imageBack": "assets/img/Equvalent-fractions",
+    "icon": "🍕",
+    "color": "#fee2e2",
+    "question": "Equivalent Fractions"
+  },
+  {
+    "topic": "Fractions",
+    "subtopic": "Comparing Fractions",
+    "front": "Comparing Fractions",
+    "back": "Rule: Use common denominators or benchmarks (like 1/2) to compare.\nSample Problem: Compare 3/8 and 5/8\nSolution: Same denominator: 3/8 < 5/8",
+    "imageBack": "assets/images/fraction_circles_blank.png",
+    "icon": "🍕",
+    "color": "#fee2e2",
+    "question": "Comparing Fractions"
+  },
+  {
+    "topic": "Fractions",
+    "subtopic": "Add/Subtract Like Denominators",
+    "front": "Add/Subtract Like Denominators",
+    "back": "Rule: Add or subtract numerators; denominator stays the same.\nSample Problem: 3/8 + 2/8\nSolution: 5/8",
+    "imageBack": "assets/images/fraction_circles_blank.png",
+    "icon": "🍕",
+    "color": "#fee2e2",
+    "question": "Add/Subtract Like Denominators"
+  },
+  {
+    "topic": "Fractions",
+    "subtopic": "Mixed & Improper",
+    "front": "Mixed & Improper",
+    "back": "Rule: Mixed = whole + fraction; convert by improper↔mixed as needed.\nSample Problem: Convert 1 1/2 to an improper fraction\nSolution: 1 1/2 = (1×2+1)/2 = 3/2",
+    "imageBack": "assets/images/fraction_circles_blank.png",
+    "icon": "🍕",
+    "color": "#fee2e2",
+    "question": "Mixed & Improper"
+  },
+  {
+    "topic": "Fractions",
+    "subtopic": "Intro to Unlike Denominators",
+    "front": "Intro to Unlike Denominators",
+    "back": "Rule: Add or subtract numerators; denominator stays the same.\nSample Problem: 3/8 + 2/8\nSolution: 5/8",
+    "imageBack": "assets/images/fraction_circles_blank.png",
+    "icon": "🍕",
+    "color": "#fee2e2",
+    "question": "Intro to Unlike Denominators"
+  },
+  {
+    "topic": "Fractions",
+    "subtopic": "Multiply Fraction by Whole",
+    "front": "Multiply Fraction by Whole",
+    "back": "Rule: a/b × n = (a×n)/b.\nSample Problem: 3/4 × 2\nSolution: 6/4 = 1 1/2",
+    "imageBack": "assets/images/fraction_circles_blank.png",
+    "icon": "🍕",
+    "color": "#fee2e2",
+    "question": "Multiply Fraction by Whole"
+  },
+  {
+    "topic": "Decimals",
+    "subtopic": "Tenths & Hundredths",
+    "front": "Tenths & Hundredths",
+    "back": "Rule: Digits to the right: tenths (0.1), hundredths (0.01).\nSample Problem: Write 0.37 in words\nSolution: 3 tenths and 7 hundredths",
+    "imageBack": "assets/images/measuring_fractions_inch.svg",
+    "icon": "💯",
+    "color": "#e9d5ff",
+    "question": "Tenths & Hundredths"
+  },
+  {
+    "topic": "Decimals",
+    "subtopic": "Decimal Place Value",
+    "front": "Decimal Place Value",
+    "back": "Rule: Each place to the right is 10× smaller than the one to its left.\nSample Problem: Break down 5.23\nSolution: 5 ones, 2 tenths, 3 hundredths",
+    "imageBack": "assets/images/measuring_fractions_inch.svg",
+    "icon": "💯",
+    "color": "#e9d5ff",
+    "question": "Decimal Place Value"
+  },
+  {
+    "topic": "Decimals",
+    "subtopic": "Comparing Decimals",
+    "front": "Comparing Decimals",
+    "back": "Rule: Line up decimal points; compare from left to right.\nSample Problem: Compare 0.45 and 0.5\nSolution: 0.45 < 0.5 (4 tenths < 5 tenths)",
+    "imageBack": "assets/images/measuring_fractions_inch.svg",
+    "icon": "💯",
+    "color": "#e9d5ff",
+    "question": "Comparing Decimals"
+  },
+  {
+    "topic": "Decimals",
+    "subtopic": "Adding/Subtracting Decimals",
+    "front": "Adding/Subtracting Decimals",
+    "back": "Rule: Line up decimal points to add or subtract.\nSample Problem: 3.4 + 0.75\nSolution: 4.15",
+    "imageBack": "assets/images/measuring_fractions_inch.svg",
+    "icon": "💯",
+    "color": "#e9d5ff",
+    "question": "Adding/Subtracting Decimals"
+  },
+  {
+    "topic": "Measurement & Data",
+    "subtopic": "Perimeter & Area",
+    "front": "Perimeter & Area",
+    "back": "Rule: Perimeter = sum of side lengths; Area of rectangle = L×W.\nSample Problem: Rectangle 5 by 3\nSolution: P = 5+5+3+3 = 16; A = 5×3 = 15",
+    "imageBack": "assets/images/perimeter_rectangle.svg",
+    "icon": "📏",
+    "color": "#dcfce7",
+    "question": "Perimeter & Area"
+  },
+  {
+    "topic": "Measurement & Data",
+    "subtopic": "Elapsed Time",
+    "front": "Elapsed Time",
+    "back": "Rule: Find the difference between start and end times.\nSample Problem: 2:15 to 3:05\nSolution: 50 minutes",
+    "imageBack": "assets/images/number_line_skip_counting.jpg",
+    "icon": "📏",
+    "color": "#dcfce7",
+    "question": "Elapsed Time"
+  },
+  {
+    "topic": "Measurement & Data",
+    "subtopic": "Unit Conversions",
+    "front": "Unit Conversions",
+    "back": "Rule: Use basic equivalences (12 in = 1 ft, 100 cm = 1 m).\nSample Problem: Convert 36 inches to feet\nSolution: 36 in ÷ 12 = 3 ft",
+    "imageBack": "assets/images/measuring_fractions_inch.svg",
+    "icon": "📏",
+    "color": "#dcfce7",
+    "question": "Unit Conversions"
+  },
+  {
+    "topic": "Measurement & Data",
+    "subtopic": "Line Plots & Tables",
+    "front": "Line Plots & Tables",
+    "back": "Rule: Organize data to see patterns and compare\nSample Problem: Tally\nSolution: Table → Bar Graph",
+    "imageBack": "assets/images/grouped_bar_chart.svg",
+    "icon": "📏",
+    "color": "#dcfce7",
+    "question": "Line Plots & Tables"
+  },
+  {
+    "topic": "Data Analysis & Probability",
+    "subtopic": "Charts & Tables",
+    "front": "Charts & Tables",
+    "back": "Rule: Choose a chart type that fits the data (bar, line, table).\nSample Problem: Show daily temperatures for a week\nSolution: Use a table or line chart with day vs. temperature",
+    "imageBack": "assets/images/grouped_bar_chart.svg",
+    "icon": "🎲",
+    "color": "#e0f2fe",
+    "question": "Charts & Tables"
+  },
+  {
+    "topic": "Data Analysis & Probability",
+    "subtopic": "Simple Probability",
+    "front": "Simple Probability",
+    "back": "Rule: Probability is the chance of an outcome (0 to 1).\nSample Problem: Coin flip: chance of heads\nSolution: 1/2 (equal chances)",
+    "imageBack": "assets/images/grouped_bar_chart.svg",
+    "icon": "🎲",
+    "color": "#e0f2fe",
+    "question": "Simple Probability"
+  },
+  {
+    "topic": "Geometry",
+    "subtopic": "Points & Lines",
+    "front": "Points & Lines",
+    "back": "Rule: Point (•), line (↔), ray (→), segment (—).\nSample Problem: Name a figure with two endpoints\nSolution: A line segment",
+    "imageBack": "assets/images/protractor.svg",
+    "icon": "📐",
+    "color": "#e0e7ff",
+    "question": "Points & Lines"
+  },
+  {
+    "topic": "Geometry",
+    "subtopic": "Angles Types",
+    "front": "Angles Types",
+    "back": "Rule: Acute <90°, right =90°, obtuse >90°, straight =180°.\nSample Problem: Classify a 120° angle\nSolution: Obtuse",
+    "imageBack": "assets/images/protractor.svg",
+    "icon": "📐",
+    "color": "#e0e7ff",
+    "question": "Angles Types"
+  },
+  {
+    "topic": "Geometry",
+    "subtopic": "Measure Angles",
+    "front": "Measure Angles",
+    "back": "Rule: Use a protractor; align vertex and base to read degrees.\nSample Problem: Measure angle aligned at 0° and passing through 60°\nSolution: 60°",
+    "imageBack": "assets/images/protractor.svg",
+    "icon": "📐",
+    "color": "#e0e7ff",
+    "question": "Measure Angles"
+  },
+  {
+    "topic": "Geometry",
+    "subtopic": "Symmetry",
+    "front": "Symmetry",
+    "back": "Rule: Line symmetry: fold so halves match exactly.\nSample Problem: Does a rectangle have line symmetry?\nSolution: Yes, 2 lines (vertical and horizontal)",
+    "imageBack": "assets/images/protractor.svg",
+    "icon": "📐",
+    "color": "#e0e7ff",
+    "question": "Symmetry"
+  },
+  {
+    "topic": "Patterns & Algebraic Thinking",
+    "subtopic": "Number Patterns",
+    "front": "Number Patterns",
+    "back": "Rule: Find the rule (e.g., ×2, +5) and apply it.\nSample Problem: 2, 5, 8, 11, ?\nSolution: Add 3 ⇒ next is 14",
+    "imageBack": "assets/images/number_line_skip_counting.jpg",
+    "icon": "🧩",
+    "color": "#fef3c7",
+    "question": "Number Patterns"
+  },
+  {
+    "topic": "Patterns & Algebraic Thinking",
+    "subtopic": "Simple Equations",
+    "front": "Simple Equations",
+    "back": "Rule: Isolate the variable by doing the inverse operation.\nSample Problem: x + 3 = 7\nSolution: x = 4",
+    "imageBack": "assets/images/number_line_skip_counting.jpg",
+    "icon": "🧩",
+    "color": "#fef3c7",
+    "question": "Simple Equations"
+  },
+  {
+    "topic": "Patterns & Algebraic Thinking",
+    "subtopic": "Multi-step Problems",
+    "front": "Multi-step Problems",
+    "back": "Rule: Read, plan, solve, and check—follow the order of operations.\nSample Problem: A book costs $8; 3 books + $4 bookmark\nSolution: $8×3 + $4 = $28",
+    "imageBack": "assets/images/number_line_skip_counting.jpg",
+    "icon": "🧩",
+    "color": "#fef3c7",
+    "question": "Multi-step Problems"
+  },
+  {
+    "topic": "Patterns & Algebraic Thinking",
+    "subtopic": "Factors/Multiples",
+    "front": "Factors/Multiples",
+    "back": "Rule: Factors multiply to a number; multiples are skip-counts.\nSample Problem: List factors of 12\nSolution: 1, 2, 3, 4, 6, 12",
+    "imageBack": "assets/images/number_line_skip_counting.jpg",
+    "icon": "🧩",
+    "color": "#fef3c7",
+    "question": "Factors/Multiples"
+  },
+  {
+    "topic": "Numbers & Place Value",
+    "subtopic": "Factors & Multiples",
+    "front": "Factors & Multiples",
+    "back": "Rule: Find factor pairs; list multiples by skip-counting.\nSample Problem: Multiples of 6 up to 30\nSolution: 6, 12, 18, 24, 30",
+    "imageBack": "assets/images/number_line_skip_counting.jpg",
+    "icon": "🔢",
+    "color": "#e0f2fe",
+    "question": "Factors & Multiples"
+  },
+  {
+    "topic": "Numbers & Place Value",
+    "subtopic": "Prime & Composite",
+    "front": "Prime & Composite",
+    "back": "Rule: Prime has exactly two factors (1 and itself).\nSample Problem: Is 11 prime? Is 12 prime?\nSolution: 11 is prime; 12 is composite",
+    "imageBack": "assets/images/place_values.jpg",
+    "icon": "🔢",
+    "color": "#e0f2fe",
+    "question": "Prime & Composite"
+  },
+  {
+    "topic": "Measurement & Data",
+    "subtopic": "Measurement Tools",
+    "front": "Measurement Tools",
+    "back": "Rule: Choose the appropriate tool for length, weight, temperature, etc.\nSample Problem: Measure a pencil’s length\nSolution: Use a ruler; report in cm or inches",
+    "imageBack": "assets/images/measuring_fractions_inch.svg",
+    "icon": "📏",
+    "color": "#dcfce7",
+    "question": "Measurement Tools"
+  },
+  {
+    "topic": "Numbers & Place Value",
+    "subtopic": "Place Value to Millions",
+    "front": "Place Value to Millions",
+    "back": "Rule: Group digits by place (ones, tens, hundreds, thousands…).\nSample Problem: Break down 4,503\nSolution: 4 thousands, 5 hundreds, 0 tens, 3 ones",
+    "imageBack": "assets/images/place_values.jpg",
+    "icon": "🔢",
+    "color": "#e0f2fe",
+    "question": "Place Value to Millions"
+  },
+  {
+    "topic": "Geometry",
+    "subtopic": "Classify Shapes",
+    "front": "Classify Shapes",
+    "back": "Rule: Classify by sides/angles (triangle types, quadrilaterals).\nSample Problem: Name a quadrilateral with 4 right angles\nSolution: Rectangle (and a square is a special rectangle)",
+    "imageBack": "assets/images/protractor.svg",
+    "icon": "📐",
+    "color": "#e0e7ff",
+    "question": "Classify Shapes"
+  },
+  {
+    "topic": "Data Analysis & Probability",
+    "subtopic": "Read Bar Graphs",
+    "front": "Read Bar Graphs",
+    "back": "Rule: Use axis labels and scale to interpret values.\nSample Problem: If a bar reaches 8 on the scale, how many?\nSolution: 8 units (per the scale)",
+    "imageBack": "assets/images/grouped_bar_chart.svg",
+    "icon": "🎲",
+    "color": "#e0f2fe",
+    "question": "Read Bar Graphs"
+  },
+  {
+    "topic": "Data Analysis & Probability",
+    "subtopic": "Make a Table",
+    "front": "Make a Table",
+    "back": "Rule: Organize data in rows/columns to summarize information.\nSample Problem: Record 5 students’ favorite fruits\nSolution: Create rows with names and a column for fruit; tally counts",
+    "imageBack": "assets/images/grouped_bar_chart.svg",
+    "icon": "🎲",
+    "color": "#e0f2fe",
+    "question": "Make a Table"
+  }
+]

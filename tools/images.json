@@ -1,0 +1,50 @@
+[
+  {
+    "name": "fraction_circles_blank.png",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/FractionCircles_Blank.PNG",
+    "topic": "Fractions",
+    "notes": "Fraction circles for parts of a whole"
+  },
+  {
+    "name": "place_values.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Place_values.jpg",
+    "topic": "Place Value",
+    "notes": "Hundreds–tens–ones chart"
+  },
+  {
+    "name": "number_line_skip_counting.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Skip_counting_on_a_number_line.jpg",
+    "topic": "Number Line",
+    "notes": "Perfect for skip-counting & rounding demos"
+  },
+  {
+    "name": "perimeter_rectangle.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/PerimeterRectangle.svg",
+    "topic": "Perimeter & Area",
+    "notes": "Shows rectangle perimeter"
+  },
+  {
+    "name": "protractor.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Protractor.svg",
+    "topic": "Angles",
+    "notes": "Clean protractor drawing"
+  },
+  {
+    "name": "long_division.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Long_division.svg",
+    "topic": "Long Division",
+    "notes": "Long division symbol"
+  },
+  {
+    "name": "grouped_bar_chart.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Charts_SVG_Example_6_-_Grouped_Bar_Chart.svg",
+    "topic": "Data & Graphs",
+    "notes": "Simple grouped bar chart"
+  },
+  {
+    "name": "measuring_fractions_inch.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Measuring_-_Fractions_of_an_inch.svg",
+    "topic": "Measurement",
+    "notes": "Ruler fractions"
+  }
+]
