@@ -134,6 +134,7 @@ function render(i){
 
   // Front image (fallback to emoji)
   if(frontImg){
+     ensureFrontImgWrapper();
     if(c.imageFront){ frontImg.src = c.imageFront; frontImg.style.display='block'; }
     else { frontImg.src = emojiDataURL(c.icon || pickIcon(c.topic)); frontImg.style.display='block'; }
   }
