@@ -97,7 +97,8 @@
     "imageBack": "assets/img/Equvalent-fractions",
     "icon": "🍕",
     "color": "#fee2e2",
-    "question": "Equivalent Fractions"
+    "question": "Equivalent Fractions",
+    "imageRight": "assets/img/fractions_equivalent.jpg"
   },
   {
     "topic": "Fractions",
@@ -107,7 +108,8 @@
     "imageBack": "assets/images/fraction_circles_blank.png",
     "icon": "🍕",
     "color": "#fee2e2",
-    "question": "Comparing Fractions"
+    "question": "Comparing Fractions",
+    "imageRight": "assets/img/comparing_fractions.jpg"
   },
   {
     "topic": "Fractions",
@@ -117,7 +119,8 @@
     "imageBack": "assets/images/fraction_circles_blank.png",
     "icon": "🍕",
     "color": "#fee2e2",
-    "question": "Add/Subtract Like Denominators"
+    "question": "Add/Subtract Like Denominators",
+    "imageRight": "assets/img/fraction_addition_pizza.jpg"
   },
   {
     "topic": "Fractions",
@@ -127,17 +130,19 @@
     "imageBack": "assets/images/fraction_circles_blank.png",
     "icon": "🍕",
     "color": "#fee2e2",
-    "question": "Mixed & Improper"
+    "question": "Mixed & Improper",
+    "imageRight": "assets/img/mixed_improper_fractions.jpg"
   },
   {
     "topic": "Fractions",
     "subtopic": "Intro to Unlike Denominators",
     "front": "Intro to Unlike Denominators",
     "back": "Rule: Add or subtract numerators; denominator stays the same.\nSample Problem: 3/8 + 2/8\nSolution: 5/8",
-    "imageBack": "assets/images/fraction_circles_blank.png",
+    "imageBack": "assets/images/fraction_different_denominators.png",
     "icon": "🍕",
     "color": "#fee2e2",
-    "question": "Intro to Unlike Denominators"
+    "question": "Intro to Unlike Denominators",
+    "imageRight": "assets/img/fraction_different_denominators.jpg"
   },
   {
     "topic": "Fractions",
@@ -147,7 +152,8 @@
     "imageBack": "assets/images/fraction_circles_blank.png",
     "icon": "🍕",
     "color": "#fee2e2",
-    "question": "Multiply Fraction by Whole"
+    "question": "Multiply Fraction by Whole",
+    "imageRight": "assets/img/fraction_multiplication_example.jpg"
   },
   {
     "topic": "Decimals",
@@ -157,7 +163,8 @@
     "imageBack": "assets/images/measuring_fractions_inch.svg",
     "icon": "💯",
     "color": "#e9d5ff",
-    "question": "Tenths & Hundredths"
+    "question": "Tenths & Hundredths",
+    "imageRight": "assets/img/decimal_place_value_chart.jpg"
   },
   {
     "topic": "Decimals",
@@ -167,17 +174,19 @@
     "imageBack": "assets/images/measuring_fractions_inch.svg",
     "icon": "💯",
     "color": "#e9d5ff",
-    "question": "Decimal Place Value"
+    "question": "Decimal Place Value",
+    "imageRight": "assets/img/decimal_place_value_chart.jpg"
   },
   {
     "topic": "Decimals",
     "subtopic": "Comparing Decimals",
     "front": "Comparing Decimals",
     "back": "Rule: Line up decimal points; compare from left to right.\nSample Problem: Compare 0.45 and 0.5\nSolution: 0.45 < 0.5 (4 tenths < 5 tenths)",
-    "imageBack": "assets/images/measuring_fractions_inch.svg",
+    "imageBack": "assets/img/comparing_decimals.svg",
     "icon": "💯",
     "color": "#e9d5ff",
-    "question": "Comparing Decimals"
+    "question": "Comparing Decimals",
+    "imageRight": "assets/img/comparing_decimals.jpg"
   },
   {
     "topic": "Decimals",
@@ -187,17 +196,19 @@
     "imageBack": "assets/images/measuring_fractions_inch.svg",
     "icon": "💯",
     "color": "#e9d5ff",
-    "question": "Adding/Subtracting Decimals"
+    "question": "Adding/Subtracting Decimals",
+    "imageRight": "assets/img/decimal_subtraction.jpg"
   },
   {
     "topic": "Measurement & Data",
     "subtopic": "Perimeter & Area",
     "front": "Perimeter & Area",
     "back": "Rule: Perimeter = sum of side lengths; Area of rectangle = L×W.\nSample Problem: Rectangle 5 by 3\nSolution: P = 5+5+3+3 = 16; A = 5×3 = 15",
-    "imageBack": "assets/images/perimeter_rectangle.svg",
+    "imageBack": "assets/images/area_vs_perimeter.svg",
     "icon": "📏",
     "color": "#dcfce7",
-    "question": "Perimeter & Area"
+    "question": "Perimeter & Area",
+    "imageRight": "assets/img/area_vs_perimeter.jpg"
   },
   {
     "topic": "Measurement & Data",
@@ -207,7 +218,8 @@
     "imageBack": "assets/images/number_line_skip_counting.jpg",
     "icon": "📏",
     "color": "#dcfce7",
-    "question": "Elapsed Time"
+    "question": "Elapsed Time",
+    "imageRight": "assets/img/elapsed_time.jpg"
   },
   {
     "topic": "Measurement & Data",
@@ -217,7 +229,8 @@
     "imageBack": "assets/images/measuring_fractions_inch.svg",
     "icon": "📏",
     "color": "#dcfce7",
-    "question": "Unit Conversions"
+    "question": "Unit Conversions",
+    "imageRight": "assets/img/length_conversion.jpg"
   },
   {
     "topic": "Measurement & Data",
@@ -227,7 +240,8 @@
     "imageBack": "assets/images/grouped_bar_chart.svg",
     "icon": "📏",
     "color": "#dcfce7",
-    "question": "Line Plots & Tables"
+    "question": "Line Plots & Tables",
+    "imageRight": "assets/img/length_conversion.jpg"
   },
   {
     "topic": "Data Analysis & Probability",
@@ -257,7 +271,8 @@
     "imageBack": "assets/images/protractor.svg",
     "icon": "📐",
     "color": "#e0e7ff",
-    "question": "Points & Lines"
+    "question": "Points & Lines",
+    "imageRight": "assets/img/lines_and_points.jpg"
   },
   {
     "topic": "Geometry",
@@ -267,27 +282,30 @@
     "imageBack": "assets/images/protractor.svg",
     "icon": "📐",
     "color": "#e0e7ff",
-    "question": "Angles Types"
+    "question": "Angles Types",
+    "imageRight": "assets/img/angles.jpg"
   },
   {
     "topic": "Geometry",
     "subtopic": "Measure Angles",
     "front": "Measure Angles",
     "back": "Rule: Use a protractor; align vertex and base to read degrees.\nSample Problem: Measure angle aligned at 0° and passing through 60°\nSolution: 60°",
-    "imageBack": "assets/images/protractor.svg",
+    "imageBack": "assets/images/measuring_angle.svg",
     "icon": "📐",
     "color": "#e0e7ff",
-    "question": "Measure Angles"
+    "question": "Measure Angles",
+    "imageRight": "assets/img/measuring_angle.jpg"
   },
   {
     "topic": "Geometry",
     "subtopic": "Symmetry",
     "front": "Symmetry",
     "back": "Rule: Line symmetry: fold so halves match exactly.\nSample Problem: Does a rectangle have line symmetry?\nSolution: Yes, 2 lines (vertical and horizontal)",
-    "imageBack": "assets/images/protractor.svg",
+    "imageBack": "assets/images/symmetry.svg",
     "icon": "📐",
     "color": "#e0e7ff",
-    "question": "Symmetry"
+    "question": "Symmetry",
+    "imageRight": "assets/img/symmetry.jpg"
   },
   {
     "topic": "Patterns & Algebraic Thinking",
@@ -297,7 +315,8 @@
     "imageBack": "assets/images/number_line_skip_counting.jpg",
     "icon": "🧩",
     "color": "#fef3c7",
-    "question": "Number Patterns"
+    "question": "Number Patterns",
+    "imageRight": "assets/img/number_pattern.jpg"
   },
   {
     "topic": "Patterns & Algebraic Thinking",
@@ -307,7 +326,8 @@
     "imageBack": "assets/images/number_line_skip_counting.jpg",
     "icon": "🧩",
     "color": "#fef3c7",
-    "question": "Simple Equations"
+    "question": "Simple Equations",
+    "imageRight": "assets/img/simple_equation.jpg"
   },
   {
     "topic": "Patterns & Algebraic Thinking",
@@ -317,7 +337,8 @@
     "imageBack": "assets/images/number_line_skip_counting.jpg",
     "icon": "🧩",
     "color": "#fef3c7",
-    "question": "Multi-step Problems"
+    "question": "Multi-step Problems",
+    "imageRight": "assets/img/multi_step_word_problem.jpg"
   },
   {
     "topic": "Patterns & Algebraic Thinking",
@@ -327,17 +348,8 @@
     "imageBack": "assets/images/number_line_skip_counting.jpg",
     "icon": "🧩",
     "color": "#fef3c7",
-    "question": "Factors/Multiples"
-  },
-  {
-    "topic": "Numbers & Place Value",
-    "subtopic": "Factors & Multiples",
-    "front": "Factors & Multiples",
-    "back": "Rule: Find factor pairs; list multiples by skip-counting.\nSample Problem: Multiples of 6 up to 30\nSolution: 6, 12, 18, 24, 30",
-    "imageBack": "assets/images/number_line_skip_counting.jpg",
-    "icon": "🔢",
-    "color": "#e0f2fe",
-    "question": "Factors & Multiples"
+    "question": "Factors/Multiples",
+    "imageRight": "assets/img/factors_by_mutiplication.jpg"
   },
   {
     "topic": "Numbers & Place Value",
@@ -347,7 +359,8 @@
     "imageBack": "assets/images/place_values.jpg",
     "icon": "🔢",
     "color": "#e0f2fe",
-    "question": "Prime & Composite"
+    "question": "Prime & Composite",
+    "imageRight": "assets/img/prime_composite_numbers.jpg"
   },
   {
     "topic": "Measurement & Data",
