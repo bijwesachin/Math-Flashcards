@@ -6,69 +6,85 @@
     <title>Math Flashcards</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-<header class="app-header">
-    <div id="loadStatus" class="load-status" aria-live="polite"></div>
-    <h1>Math Flashcards</h1>
-    <div class="controls">
-        <label>
-            Filter by Topic:
-            <select id="topicFilter" aria-label="Select topic">
-                <option value="ALL">All Topics</option>
-            </select>
-        </label>
-
-        <label>
-            Search:
-            <input id="searchInput" type="text" placeholder="Search cards..." />
-        </label>
-
-        <label class="checkbox">
-            <input id="shuffleToggle" type="checkbox" />
-            Shuffle
-        </label>
-
-        <button id="resetBtn" class="secondary" style="visibility:hidden;">Reset Filters</button>
+<body class="ios-bg">
+<!-- iPad-style device shell -->
+<div class="ipad-shell">
+    <div class="bezel">
+        <span class="camera-dot" aria-hidden="true"></span>
     </div>
-</header>
 
-<main>
-    <div id="cardContainer" class="card" tabindex="0" aria-label="Flashcard. Press Space or Enter to flip.">
-        <div id="cardInner" class="card-inner">
-            <!-- FRONT -->
-            <div class="card-face card-front">
-                <div id="topicBadge" class="topic-badge">
-                    <span id="topicIcon" aria-hidden="true">🧮</span>
-                    <span id="topicLabel">Math</span>
-                </div>
+    <!-- App window (your existing app lives inside) -->
+    <div class="app-window">
+        <header class="app-header ios-header">
+            <div id="loadStatus" class="load-status" aria-live="polite"></div>
+            <h1 class="ios-title">Math Flashcards</h1>
 
-                <h2 id="frontQuestion">Loading…</h2>
-                <p id="frontText" class="front-hint"></p>
-                <div id="frontSample" class="front-sample" aria-live="polite"></div>
-                <img id="frontImg" class="card-img" alt="" style="display:none;" />
-                <p class="flip-hint" aria-hidden="true">Click card or press Space to flip</p>
+            <div class="controls ios-controls">
+                <label>
+                    <span>Topic</span>
+                    <select id="topicFilter" aria-label="Select topic">
+                        <option value="ALL">All Topics</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Search</span>
+                    <input id="searchInput" type="text" placeholder="Search cards..." />
+                </label>
+
+                <label class="checkbox">
+                    <input id="shuffleToggle" type="checkbox" />
+                    <span>Shuffle</span>
+                </label>
+
+                <button id="resetBtn" class="secondary ios-pill" style="visibility:hidden;">Reset</button>
             </div>
+        </header>
 
-            <!-- BACK -->
-            <div class="card-face card-back">
-                <div class="back-content">
-                    <h2 id="backTitle" class="back-title"></h2>
-                    <div id="backText" class="back-text"><p><em>Loading…</em></p></div>
-                    <img id="backImg" class="card-img" alt="" style="display:none;" />
+        <main class="ios-main">
+            <div id="cardContainer" class="card ios-card" tabindex="0" aria-label="Flashcard. Press Space or Enter to flip.">
+                <div id="cardInner" class="card-inner">
+                    <!-- FRONT -->
+                    <div class="card-face card-front">
+                        <div id="topicBadge" class="topic-badge">
+                            <span id="topicIcon" aria-hidden="true">🧮</span>
+                            <span id="topicLabel">Math</span>
+                        </div>
+
+                        <h2 id="frontQuestion">Loading…</h2>
+                        <p id="frontText" class="front-hint"></p>
+                        <div id="frontSample" class="front-sample" aria-live="polite"></div>
+                        <img id="frontImg" class="card-img" alt="" style="display:none;" />
+                        <p class="flip-hint" aria-hidden="true">Tap card or press Space to flip</p>
+                    </div>
+
+                    <!-- BACK -->
+                    <div class="card-face card-back">
+                        <div class="back-content">
+                            <h2 id="backTitle" class="back-title"></h2>
+                            <div id="backText" class="back-text"><p><em>Loading…</em></p></div>
+                            <img id="backImg" class="card-img" alt="" style="display:none;" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</main>
+        </main>
 
-<footer class="app-footer">
-    <div class="nav">
-        <button id="prevBtn">⟵ Previous</button>
-        <button id="flipBtn" class="primary">Flip</button>
-        <button id="nextBtn">Next ⟶</button>
+        <!-- iOS-style bottom toolbar -->
+        <footer class="app-footer ios-toolbar">
+            <div class="nav">
+                <button id="prevBtn" class="ios-pill">◀︎ Previous</button>
+                <button id="flipBtn" class="primary ios-pill">Flip</button>
+                <button id="nextBtn" class="ios-pill">Next ▶︎</button>
+            </div>
+            <div id="progressLabel" class="status ios-status">0 / 0</div>
+        </footer>
+
+        <!-- home indicator -->
+        <div class="home-indicator" aria-hidden="true"></div>
     </div>
-    <div id="progressLabel" class="status">0 / 0</div>
-</footer>
+</div>
 
 <script src="script.js"></script>
 </body>
+</html>
