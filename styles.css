@@ -323,3 +323,14 @@ img, button { -webkit-touch-callout: none; }
 #cardContainer.card {
   height: min(560px, 70vh);
 }
+/* Full screen interactive area */
+#cardContainer {
+  touch-action: pan-y; /* Prevent accidental scrolls */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Visual feedback on tap */
+#cardContainer:active {
+  transform: scale(0.98);
+}

@@ -348,3 +348,41 @@ function ensureFrontImgWrapper() {
   wrap.appendChild(frontImg);
   return wrap;
 }
+// === Touch & Swipe Navigation ===
+let touchStartX = 0;
+let touchEndX = 0;
+
+const card = document.getElementById("cardContainer");
+
+// Detect swipe start
+card.addEventListener("touchstart", (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+}, false);
+
+// Detect swipe end
+card.addEventListener("touchend", (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleGesture();
+}, false);
+
+function handleGesture() {
+  const swipeDistance = touchEndX - touchStartX;
+
+  if (Math.abs(swipeDistance) > 50) {
+    if (swipeDistance > 0) {
+      // Swipe right → previous
+      showPreviousCard();
+    } else {
+      // Swipe left → next
+      showNextCard();
+    }
+  } else {
+    // Tap → flip
+    flipCard();
+  }
+}
+
+// Also allow mouse clicks (desktop)
+card.addEventListener("click", () => {
+  flipCard();
+});
