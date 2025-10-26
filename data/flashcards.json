@@ -1,13 +1,14 @@
 [
   {
     "topic": "Numbers & Place Value",
-    "subtopic": "Multi-digit numbers",
-    "front": "Multi-digit numbers",
+    "subtopic": "Order of Operations",
+    "front": "Order of Operations",
     "back": "Rule: Review the concept and apply the rule.\nSample Problem: 2 + 3 × 4\nSolution: 2 + 12 = 14",
     "imageBack": "assets/images/place_values.jpg",
     "icon": "🔢",
     "color": "#e0f2fe",
-    "question": "Multi-digit numbers"
+    "question": "Order of Operations",
+    "imageRight": "assets/img/order_of_operations.jpg"
   },
   {
     "topic": "Numbers & Place Value",
@@ -18,16 +19,6 @@
     "icon": "🔢",
     "color": "#e0f2fe",
     "question": "Comparing Numbers"
-  },
-  {
-    "topic": "Numbers & Place Value",
-    "subtopic": "Rounding",
-    "front": "Rounding",
-    "back": "Rule: Review the concept and apply the rule.\nSample Problem: 2 + 3 × 4\nSolution: 2 + 12 = 14",
-    "imageBack": "assets/images/number_line_skip_counting.jpg",
-    "icon": "🔢",
-    "color": "#e0f2fe",
-    "question": "Rounding"
   },
   {
     "topic": "Operations",
@@ -73,11 +64,12 @@
     "topic": "Operations",
     "subtopic": "Long division",
     "front": "Long division",
-    "back": "Rule: Divide → Multiply → Subtract → Bring down (repeat)\nSample Problem: 392 ÷ 7\nSolution: 56",
+    "back": "Rule: Divide → Multiply → Subtract → Bring down (repeat)\nSample Problem: 126 ÷ 3\nSolution: 42",
     "imageBack": "assets/images/long_division.svg",
     "icon": "±×÷",
     "color": "#fde68a",
-    "question": "Long division"
+    "question": "Long division",
+    "imageRight": "assets/img/division_steps.jpg"
   },
   {
     "topic": "Operations",
@@ -124,6 +116,17 @@
   },
   {
     "topic": "Fractions",
+    "subtopic": "Intro to Unlike Denominators",
+    "front": "Intro to Unlike Denominators",
+    "back": "Rule: Add or subtract numerators; denominator stays the same.\nSample Problem: 3/8 + 2/8\nSolution: 5/8",
+    "imageBack": "assets/images/fraction_different_denominators.png",
+    "icon": "🍕",
+    "color": "#fee2e2",
+    "question": "Intro to Unlike Denominators",
+    "imageRight": "assets/img/fractions_different_denominators.jpg"
+  },
+  {
+    "topic": "Fractions",
     "subtopic": "Mixed & Improper",
     "front": "Mixed & Improper",
     "back": "Rule: Mixed = whole + fraction; convert by improper↔mixed as needed.\nSample Problem: Convert 1 1/2 to an improper fraction\nSolution: 1 1/2 = (1×2+1)/2 = 3/2",
@@ -132,17 +135,6 @@
     "color": "#fee2e2",
     "question": "Mixed & Improper",
     "imageRight": "assets/img/mixed_improper_fractions.jpg"
-  },
-  {
-    "topic": "Fractions",
-    "subtopic": "Intro to Unlike Denominators",
-    "front": "Intro to Unlike Denominators",
-    "back": "Rule: Add or subtract numerators; denominator stays the same.\nSample Problem: 3/8 + 2/8\nSolution: 5/8",
-    "imageBack": "assets/images/fraction_different_denominators.png",
-    "icon": "🍕",
-    "color": "#fee2e2",
-    "question": "Intro to Unlike Denominators",
-    "imageRight": "assets/img/fraction_different_denominators.jpg"
   },
   {
     "topic": "Fractions",
@@ -203,7 +195,7 @@
     "topic": "Measurement & Data",
     "subtopic": "Perimeter & Area",
     "front": "Perimeter & Area",
-    "back": "Rule: Perimeter = sum of side lengths; Area of rectangle = L×W.\nSample Problem: Rectangle 5 by 3\nSolution: P = 5+5+3+3 = 16; A = 5×3 = 15",
+    "back": "Rule: Perimeter = sum of side lengths; Area of rectangle = Length×Width.\nSample Problem: Rectangle 5 by 3\nSolution: P = 5+5+3+3 = 16; A = 5×3 = 15",
     "imageBack": "assets/images/area_vs_perimeter.svg",
     "icon": "📏",
     "color": "#dcfce7",
@@ -225,7 +217,7 @@
     "topic": "Measurement & Data",
     "subtopic": "Unit Conversions",
     "front": "Unit Conversions",
-    "back": "Rule: Use basic equivalences (12 in = 1 ft, 100 cm = 1 m).\nSample Problem: Convert 36 inches to feet\nSolution: 36 in ÷ 12 = 3 ft",
+    "back": "Rule: Use basic equivalences (1 km = 1000 m, 1 m = 100 cm).\nSample Problem: Convert 7 km to meters\nSolution: 7 km x 1000 = 7000 m",
     "imageBack": "assets/images/measuring_fractions_inch.svg",
     "icon": "📏",
     "color": "#dcfce7",
