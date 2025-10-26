@@ -4,16 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Math Flashcards</title>
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- PWA manifest -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0ea5e9">
+
+    <!-- iOS Add to Home Screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Math Flashcards">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- App icons -->
+    <link rel="apple-touch-icon" href="assets/icon.png">
+    <link rel="icon" href="assets/icon.png">
 </head>
+
 <body>
 <header class="app-header">
-    <div id="loadStatus" class="load-status" aria-live="polite"></div>
+    <div id="loadStatus" class="load-status"></div>
     <h1>Math Flashcards</h1>
+
     <div class="controls">
         <label>
-            Filter by Topic:
-            <select id="topicFilter" aria-label="Select topic">
+            Topic:
+            <select id="topicFilter">
                 <option value="ALL">All Topics</option>
             </select>
         </label>
@@ -28,32 +45,32 @@
             Shuffle
         </label>
 
-        <button id="resetBtn" class="secondary" style="visibility:hidden;">Reset Filters</button>
+        <button id="resetBtn" class="secondary" style="visibility:hidden;">Reset</button>
     </div>
 </header>
 
 <main>
-    <div id="cardContainer" class="card" tabindex="0" aria-label="Flashcard. Press Space or Enter to flip.">
+    <div id="cardContainer" class="card" tabindex="0">
         <div id="cardInner" class="card-inner">
             <!-- FRONT -->
             <div class="card-face card-front">
                 <div id="topicBadge" class="topic-badge">
-                    <span id="topicIcon" aria-hidden="true">🧮</span>
+                    <span id="topicIcon">🧮</span>
                     <span id="topicLabel">Math</span>
                 </div>
 
                 <h2 id="frontQuestion">Loading…</h2>
                 <p id="frontText" class="front-hint"></p>
-                <div id="frontSample" class="front-sample" aria-live="polite"></div>
+                <div id="frontSample" class="front-sample"></div>
                 <img id="frontImg" class="card-img" alt="" style="display:none;" />
-                <p class="flip-hint" aria-hidden="true">Click card or press Space to flip</p>
+                <p class="flip-hint">Tap card or press Space to flip</p>
             </div>
 
             <!-- BACK -->
             <div class="card-face card-back">
                 <div class="back-content">
                     <h2 id="backTitle" class="back-title"></h2>
-                    <div id="backText" class="back-text"><p><em>Loading…</em></p></div>
+                    <div id="backText" class="back-text"></div>
                     <img id="backImg" class="card-img" alt="" style="display:none;" />
                 </div>
             </div>
@@ -63,12 +80,33 @@
 
 <footer class="app-footer">
     <div class="nav">
-        <button id="prevBtn">⟵ Previous</button>
+        <button id="prevBtn">◀︎ Previous</button>
         <button id="flipBtn" class="primary">Flip</button>
-        <button id="nextBtn">Next ⟶</button>
+        <button id="nextBtn">Next ▶︎</button>
     </div>
     <div id="progressLabel" class="status">0 / 0</div>
 </footer>
 
+<!-- Home indicator padding for iPad -->
+<div class="home-indicator-space"></div>
+
+<!-- Main Script -->
 <script src="script.js"></script>
+
+<!-- Service Worker + PWA setup -->
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js').catch(console.error);
+      });
+    }
+
+    // Add class when launched as standalone iOS app
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.navigator.standalone === true) {
+        document.documentElement.classList.add('ios-standalone');
+      }
+    });
+</script>
 </body>
+</html>
