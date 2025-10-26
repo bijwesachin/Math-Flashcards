@@ -334,3 +334,9 @@ img, button { -webkit-touch-callout: none; }
 #cardContainer:active {
   transform: scale(0.98);
 }
+/* Prevent Safari from interpreting horizontal swipes as scrolls */
+html, body { height: 100%; overflow: hidden; }
+#cardContainer { touch-action: none; } /* iOS ignores some values, but helps on others */
+
+/* Make sure invisible zones don’t block taps in the middle */
+.touch-zone { pointer-events: auto; }

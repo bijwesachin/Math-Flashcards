@@ -112,35 +112,85 @@
 
 <!-- Swipe & tap wiring that triggers the hidden buttons your JS already listens to -->
 <script>
-    const card = document.getElementById('cardContainer');
-    const leftZone = document.getElementById('leftZone');
-    const rightZone = document.getElementById('rightZone');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const flipBtn = document.getElementById('flipBtn');
+    (function () {
+      const card = document.getElementById('cardContainer');
+      const leftZone = document.getElementById('leftZone');
+      const rightZone = document.getElementById('rightZone');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const flipBtn = document.getElementById('flipBtn');
 
-    // Tap anywhere on card to flip
-    card.addEventListener('click', () => flipBtn.click());
+      let startX = 0, startY = 0, lastTouchTime = 0;
+      let isSwiping = false, didSwipe = false;
 
-    // Click edges to navigate
-    leftZone.addEventListener('click', () => prevBtn.click());
-    rightZone.addEventListener('click', () => nextBtn.click());
+      // iOS standalone: prevent vertical scroll hijacking
+      const OPTS_ACTIVE = { passive: false };
+      const OPTS_PASSIVE = { passive: true };
 
-    // Swipe navigation
-    let startX = 0;
-    card.addEventListener('touchstart', e => { startX = e.changedTouches[0].screenX; }, {passive:true});
-    card.addEventListener('touchend', e => {
-      const dx = e.changedTouches[0].screenX - startX;
-      if (Math.abs(dx) > 50) (dx > 0 ? prevBtn : nextBtn).click();
-      else flipBtn.click();
-    });
+      card.addEventListener('touchstart', (e) => {
+        const t = e.changedTouches[0];
+        startX = t.clientX;
+        startY = t.clientY;
+        isSwiping = false;
+        didSwipe = false;
+        lastTouchTime = Date.now();
+      }, OPTS_PASSIVE);
 
-    // PWA SW
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./service-worker.js').catch(console.error);
-      });
-    }
+      card.addEventListener('touchmove', (e) => {
+        const t = e.changedTouches[0];
+        const dx = t.clientX - startX;
+        const dy = t.clientY - startY;
+
+        // Start horizontal swipe only when X movement dominates
+        if (!isSwiping && Math.abs(dx) > 12 && Math.abs(dx) > Math.abs(dy)) {
+          isSwiping = true;
+        }
+
+        if (isSwiping) {
+          // Stop the page from scrolling while swiping
+          e.preventDefault();
+        }
+      }, OPTS_ACTIVE);
+
+      card.addEventListener('touchend', (e) => {
+        const t = e.changedTouches[0];
+        const dx = t.clientX - startX;
+        const dy = t.clientY - startY;
+
+        // Consider swipe if horizontal, long enough, and not a vertical drag
+        const SWIPE_MIN = 48;
+        const TAP_MAX = 10;
+
+        if (isSwiping && Math.abs(dx) >= SWIPE_MIN) {
+          (dx > 0 ? prevBtn : nextBtn).click();
+          didSwipe = true; // suppress ghost click
+          return;
+        }
+
+        // Treat as tap if very small movement
+        if (Math.abs(dx) <= TAP_MAX && Math.abs(dy) <= TAP_MAX) {
+          flipBtn.click();
+        }
+      }, OPTS_ACTIVE);
+
+      // Suppress the ghost click iOS fires after touchend
+      card.addEventListener('click', (e) => {
+        const within300ms = Date.now() - lastTouchTime < 300;
+        if (didSwipe || within300ms) {
+          e.stopPropagation();
+          e.preventDefault();
+          didSwipe = false;
+          return;
+        }
+        // Genuine mouse click: flip
+        flipBtn.click();
+      }, true);
+
+      // Edge zones also work (tap) — keep as convenience
+      leftZone.addEventListener('click', () => prevBtn.click());
+      rightZone.addEventListener('click', () => nextBtn.click());
+    })();
 </script>
+
 </body>
 </html>
