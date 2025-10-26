@@ -168,60 +168,65 @@ function flip(){
   setTimeout(()=>{ animating=false; }, 620);
 }
 
-function renderBack(c){
+function renderBack(c) {
   const parsed = parseBack(c.back);
-  if(backTitle) backTitle.textContent = c.question || c.front || '';
+  if (backTitle) backTitle.textContent = c.question || c.front || '';
   const topicKey = topicKeyFor(c.topic);
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'back-split';
+  wrapper.setAttribute('data-topic', topicKey);
+
+  const left = document.createElement('div');
+  left.className = 'back-left';
   const container = document.createElement('div');
   container.className = 'back-sections';
-  container.setAttribute('data-topic', topicKey);
+  container.innerHTML = `
+    <div class="info-card info-card--rule"><div class="icon">🧠</div><div class="content"><div class="title">Rule</div><div class="text">${escapeHtml(parsed.rule)}</div></div></div>
+    <div class="info-card info-card--sample"><div class="icon">✏️</div><div class="content"><div class="title">Sample</div><div class="text">${escapeHtml(parsed.sample)}</div></div></div>
+    <div class="info-card info-card--solution"><div class="icon">✅</div><div class="content"><div class="title">Solution Steps</div><div class="text"><ul class="steps">${stepsHtml(parsed.solution)}</ul></div></div></div>
+  `;
+  left.appendChild(container);
 
-  const sections = [
-    {cls:'info-card info-card--rule', icon:'🧠', title:'Rule', text: parsed.rule || ''},
-    {cls:'info-card info-card--sample', icon:'✏️', title:'Sample', text: parsed.sample || ''},
-    {cls:'info-card info-card--solution', icon:'✅', title:'Solution Steps', text: parsed.solution || ''},
-  ];
+  const right = document.createElement('div');
+  right.className = 'back-right';
+  const img = document.createElement('img');
+  if (c.imageRight) {
+    img.src = c.imageRight;
+    right.appendChild(img);
+  } else {
+    right.innerHTML = '<span style="opacity:0.2;font-size:3rem;">🧮</span>';
+  }
 
-  container.innerHTML = sections.map(s=>`
-    <div class="${s.cls}">
-      <div class="icon">${s.icon}</div>
-      <div class="content">
-        <div class="title">${escapeHtml(s.title)}</div>
-        <div class="text">${
-          s.title==='Solution Steps' ? `<ul class="steps">${stepsHtml(s.text)}</ul>` : escapeHtml(s.text)
-        }</div>
-      </div>
-    </div>
-  `).join('');
+  wrapper.appendChild(left);
+  wrapper.appendChild(right);
 
   backText.innerHTML = '';
-  backText.appendChild(container);
+  backText.appendChild(wrapper);
 
-  // Replay button (color per topic)
+  // Replay button
   const replayBtn = document.createElement('button');
   replayBtn.className = 'replay-btn';
   replayBtn.innerHTML = '🔁';
   replayBtn.style.background = topicGradient(c.topic);
   replayBtn.title = 'Replay Steps';
-  replayBtn.addEventListener('click', ()=> animateSteps(container, true)); // force replay
+  replayBtn.addEventListener('click', () => animateSteps(container, true));
   backText.appendChild(replayBtn);
 
-  // Section reveal animation
   animateSections(container);
 
-  // Step animation: only first time per card unless replay pressed
-  const id = filtered[current]; // index into data
-  if(!playedSteps.has(id)){
-    animateSteps(container, false); // first time
+  const id = filtered[current];
+  if (!playedSteps.has(id)) {
+    animateSteps(container, false);
     playedSteps.add(id);
   } else {
-    // Show steps immediately (no animation)
     container.querySelectorAll('.info-card--solution li').forEach(li => {
       li.style.opacity = 1;
       li.style.animation = 'none';
     });
   }
 }
+
 
 // ---- Animations ----
 function animateSections(container){
