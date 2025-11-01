@@ -11,46 +11,6 @@
     "imageRight": "assets/img/order_of_operations.jpg"
   },
   {
-    "topic": "Numbers & Place Value",
-    "subtopic": "Comparing Numbers",
-    "front": "Comparing Numbers",
-    "back": "Rule: Use >, <, = signs. Trick: Align digits from left and \nSample Problem: 45,678 > 45,599 because 6 > 5 in the hundreds place\nSolution: 45,678 > 45,599 because 6 > 5 in the hundreds place",
-    "imageBack": "assets/images/number_line_skip_counting.jpg",
-    "icon": "🔢",
-    "color": "#e0f2fe",
-    "question": "Comparing Numbers"
-  },
-  {
-    "topic": "Operations",
-    "subtopic": "Multi-digit addition",
-    "front": "Multi-digit addition",
-    "back": "Rule: Add by place value. Line up digits. Carry to next place if 10 or more\nSample Problem: 456 + 378\nSolution: 834",
-    "imageBack": "assets/images/fraction_circles_blank.png",
-    "icon": "±×÷",
-    "color": "#fde68a",
-    "question": "Multi-digit addition"
-  },
-  {
-    "topic": "Operations",
-    "subtopic": "Multi-digit subtraction",
-    "front": "Multi-digit subtraction",
-    "back": "Rule: Subtract by place value. Borrow from the next place when needed\nSample Problem: 902 − 467\nSolution: 435",
-    "imageBack": "assets/images/fraction_circles_blank.png",
-    "icon": "±×÷",
-    "color": "#fde68a",
-    "question": "Multi-digit subtraction"
-  },
-  {
-    "topic": "Operations",
-    "subtopic": "Multiplication",
-    "front": "Multiplication",
-    "back": "Rule: Repeated addition or arrays. 3 × 4 = 3 groups of 4\nSample Problem: 23 × 4\nSolution: (20 × 4) + (3 × 4) = 92",
-    "imageBack": "assets/images/number_line_skip_counting.jpg",
-    "icon": "±×÷",
-    "color": "#fde68a",
-    "question": "Multiplication"
-  },
-  {
     "topic": "Operations",
     "subtopic": "Division",
     "front": "Division",
