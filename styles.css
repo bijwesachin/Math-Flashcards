@@ -1,14 +1,14 @@
 /* Base */
 * { box-sizing: border-box; }
 :root {
-  --bg-color: #121212;
-  --card-bg: #1e1e1e;
-  --text-primary: #e0e0e0;
-  --text-secondary: #a0a0a0;
+  --bg-color: #1a1a2e;
+  --card-bg: #16213e;
+  --text-primary: #f0f0f0;
+  --text-secondary: #b8b8b8;
   --accent-color: #4f46e5;
   --accent-hover: #4338ca;
-  --border-color: #333333;
-  --shadow-color: rgba(0, 0, 0, 0.3);
+  --border-color: #2a3a5e;
+  --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -194,7 +194,7 @@ main {
 }
 .card-back { 
   transform: rotateY(180deg); 
-  background: #252525; 
+  background: #1f2b4a; 
   overflow-y: auto;
   color: var(--text-primary);
 }
@@ -242,20 +242,35 @@ main {
 /* ===== Back 'info card' sections ===== */
 .back-sections { display: flex; flex-direction: column; gap: 10px; }
 .info-card {
-  display: grid; grid-template-columns: 28px 1fr;
-  align-items: start; gap: 10px;
+  display: flex;
+  align-items: start; 
+  gap: 10px;
   padding: 10px 12px;
-  border: 1px solid #e5e7eb; border-radius: 12px;
-  background: #f8fafc;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.03), inset 0 0 0 1px rgba(255,255,255,0.6);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: #1a2a4f;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
-.info-card .icon { font-size: 18px; line-height: 1; }
-.info-card .content { display: flex; flex-direction: column; gap: 4px; }
-.info-card .title { font-weight: 700; color: #0f172a; }
-.info-card .text { color: #111827; }
-.info-card--rule     { background: linear-gradient(135deg, #ede9fe, #e0f2fe); }
-.info-card--sample   { background: linear-gradient(135deg, #ecfeff, #e0f7fa); }
-.info-card--solution { background: linear-gradient(135deg, #fef9c3, #dcfce7); }
+.info-card .icon { 
+  font-size: 18px; 
+  line-height: 1; 
+  color: var(--accent-color);
+}
+.info-card .content { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 4px; 
+}
+.info-card .title { 
+  font-weight: 700; 
+  color: #e0e0ff; 
+}
+.info-card .text { 
+  color: #e0e0e0; 
+}
+.info-card--rule     { background: linear-gradient(135deg, #2d3a5f, #1d2a4f); }
+.info-card--sample   { background: linear-gradient(135deg, #2a3a5e, #1a2a4e); }
+.info-card--solution { background: linear-gradient(135deg, #2a3a5d, #1a2a4d); }
 
 /* Topic-colored accents */
 [data-topic="Fractions"] .info-card { border-left:6px solid #f97316; }
