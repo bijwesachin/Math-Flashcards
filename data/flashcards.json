@@ -386,7 +386,7 @@
     "topic": "Patterns & Algebraic Thinking",
     "subtopic": "Find the Missing Number",
     "front": "Find the Missing Number",
-    "back": "Rule: Use inverse operations to find the unknown.\nSample Problem: X + 6 = 14\nSolution: x = 8",
+    "back": "Rule: Use inverse operations to find the unknown.\nSample Problem: \u2610 + 6 = 14\nSolution: \u2610 = 8",
     "icon": "\ud83e\udde9",
     "color": "#fef3c7",
     "question": "Find the Missing Number"
@@ -399,5 +399,34 @@
     "icon": "\ud83e\udde9",
     "color": "#fef3c7",
     "question": "Input\u2013Output Rules"
+  },
+  {
+  {
+    "topic": "Geometry",
+    "subtopic": "Area of a Triangle",
+    "front": "Area of a Triangle",
+    "back": "Rule: Area = (base \u00d7 height) \u00f7 2.\nSample Problem: Base = 6 cm, Height = 4 cm\nSolution: (6 \u00d7 4) \u00f7 2 = 12 cm\u00b2",
+    "icon": "\ud83d\udcd0",
+    "imageRight": "assets/img/area_tringle.png",
+    "color": "#e0e7ff",
+    "question": "Area of a Triangle"
+  },
+  {
+    "topic": "Geometry",
+    "subtopic": "Circumference of a Circle",
+    "front": "Circumference of a Circle",
+    "back": "Rule: Circumference = 2 \u00d7 \u03c0 \u00d7 r.\nSample Problem: Radius = 7 cm (\u03c0 \u2248 3.14)\nSolution: 2 \u00d7 3.14 \u00d7 7 \u2248 43.96 cm",
+    "icon": "\ud83d\udcd0",
+    "color": "#e0e7ff",
+    "question": "Circumference of a Circle"
+  },
+  {
+    "topic": "Geometry",
+    "subtopic": "Area of a Circle",
+    "front": "Area of a Circle",
+    "back": "Rule: Area = \u03c0 \u00d7 r\u00b2.\nSample Problem: Radius = 5 cm (\u03c0 \u2248 3.14)\nSolution: 3.14 \u00d7 25 = 78.5 cm\u00b2",
+    "icon": "\ud83d\udcd0",
+    "color": "#e0e7ff",
+    "question": "Area of a Circle"
   }
 ]
