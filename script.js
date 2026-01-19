@@ -227,7 +227,6 @@ function renderBack(c) {
   }
 }
 
-
 // ---- Animations ----
 function animateSections(container){
   const cards = container.querySelectorAll('.info-card');
@@ -337,6 +336,7 @@ function showEmpty(){
   if(backImg) backImg.style.display='none';
   if(progressLabel) progressLabel.textContent = '0 / 0';
 }
+
 function ensureFrontImgWrapper() {
   if (!frontImg) return null;
   const p = frontImg.parentElement;
@@ -348,41 +348,42 @@ function ensureFrontImgWrapper() {
   wrap.appendChild(frontImg);
   return wrap;
 }
-// === Touch & Swipe Navigation ===
-let touchStartX = 0;
-let touchEndX = 0;
 
-const card = document.getElementById("cardContainer");
+// Ensure no click events on the card
+cardContainer.style.pointerEvents = 'none';
+cardContainer.querySelectorAll('*').forEach(el => {
+  el.style.pointerEvents = 'none';
+});
 
-// Detect swipe start
-card.addEventListener("touchstart", (e) => {
-  touchStartX = e.changedTouches[0].screenX;
-}, false);
+// Navigation button event listeners
+document.getElementById('flipBtn').addEventListener('click', () => {
+  flip();
+  updateProgress();
+});
 
-// Detect swipe end
-card.addEventListener("touchend", (e) => {
-  touchEndX = e.changedTouches[0].screenX;
-  handleGesture();
-}, false);
+document.getElementById('prevBtn').addEventListener('click', () => {
+  if (current > 0) {
+    current--;
+    render(current);
+    flipped = false;
+    cardContainer.classList.remove('flipped');
+  }
+  updateProgress();
+});
 
-function handleGesture() {
-  const swipeDistance = touchEndX - touchStartX;
+document.getElementById('nextBtn').addEventListener('click', () => {
+  if (current < filtered.length - 1) {
+    current++;
+    render(current);
+    flipped = false;
+    cardContainer.classList.remove('flipped');
+  }
+  updateProgress();
+});
 
-  if (Math.abs(swipeDistance) > 50) {
-    if (swipeDistance > 0) {
-      // Swipe right → previous
-      showPreviousCard();
-    } else {
-      // Swipe left → next
-      showNextCard();
-    }
-  } else {
-    // Tap → flip
-    flipCard();
+// Helper function to update progress
+function updateProgress() {
+  if (progressLabel) {
+    progressLabel.textContent = `${current + 1} / ${filtered.length}`;
   }
 }
-
-// Also allow mouse clicks (desktop)
-card.addEventListener("click", () => {
-  flipCard();
-});

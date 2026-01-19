@@ -79,7 +79,6 @@
                 <p id="frontText" class="front-hint"></p>
                 <div id="frontSample" class="front-sample"></div>
                 <img id="frontImg" class="card-img" alt="" style="display:none" />
-                <p class="flip-hint">Tap to flip • Swipe ⟵ ⟶</p>
             </div>
 
             <!-- BACK -->
@@ -92,9 +91,20 @@
             </div>
         </div>
 
-        <!-- Invisible swipe/tap zones -->
-        <div class="touch-zone left-zone" id="leftZone" aria-hidden="true"></div>
-        <div class="touch-zone right-zone" id="rightZone" aria-hidden="true"></div>
+        <!-- Swipe/tap zones removed -->
+    </div>
+    
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <button id="prevBtn" class="nav-button" aria-label="Previous card">
+            <span class="button-icon">←</span> Previous
+        </button>
+        <button id="flipBtn" class="nav-button primary" aria-label="Flip card">
+            <span class="button-icon">🔄</span> Flip
+        </button>
+        <button id="nextBtn" class="nav-button" aria-label="Next card">
+            Next <span class="button-icon">→</span>
+        </button>
     </div>
 </main>
 
